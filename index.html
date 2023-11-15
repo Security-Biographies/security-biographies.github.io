@@ -1,1 +1,105 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" data-theme="aqua">
+<head>
+    	<meta charset="UTF-8">
+    	<title>Security Biographies</title>
+    	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.0.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<style>
+	.move-right { 
+            animation: A 10s infinite ease-in-out; 
+        } 
+
+	.move-left { 
+            animation: B 10s infinite ease-in-out; 
+        } 
+   
+        @keyframes A { 
+            0% { 
+                transform: translateX(0px); 
+            } 
+  
+            50% { 
+                transform: translateX(400%); 
+            } 
+
+            100% { 
+                transform: translateX(0px); 
+            } 
+        } 
+
+
+        @keyframes B { 
+            0% { 
+                transform: translateX(0px); 
+            } 
+  
+            50% { 
+                transform: translateX(-400%); 
+            } 
+
+            100% { 
+                transform: translateX(0px); 
+            } 
+        } 
+
+
+	</style>
+</head>
+<body>
+
+    <div class="flex flex-col h-screen justify-between">
+        <div class="container mx-auto px-8 lg:px-56 pb-16">
+            <h1 class="mb-5 text-5xl font-bold pt-16">Security Biographies</h1>
+            <h1 class="mb-5 text-3xl font-bold">Who are we?</h1>
+            <p>
+                We are a team of researchers from the <a class="link link-hover underline" href="https://cispa.de/en" target="_blank">
+                CISPA Helmholtz Center for Information Security</a> in Germany, interested in the biographies of security experts.
+            </p>
+
+            <div class="flex justify-around flex-wrap gap-8 py-8 container-switch">
+                <div id="div1" class="move-right">
+                    <div class="avatar">
+                        <div class="w-32 rounded">
+                        <img src="images/c01flha.jpg" />
+                        </div>
+                    </div>
+                    <figcaption class="mt-2 text-sm text-center">
+                        Florian Hantke
+                    </figcaption>
+                </div>
+                <div id="div2" class="move-left">
+                    <div class="avatar">
+                        <div class="w-32 rounded">
+                        <img src="images/c01cagu.jpg" />
+                        </div>
+                    </div>
+                    <figcaption class="mt-2 text-sm text-center">
+                        Carolyn Guthoff
+                    </figcaption>
+                </div>
+
+            </div>
+
+            <h1 class="mb-5 text-3xl font-bold">The book</h1>
+            <p>
+		    ...
+            </p>
+        </div>
+
+        <footer class="footer footer-center p-5 bg-base-200 text-base-content">
+            <div>
+                <div class="grid grid-flow-col gap-4">
+                    <a class="link link-hover" href="mailto:me@fhantke.de">Contact</a> 
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>
